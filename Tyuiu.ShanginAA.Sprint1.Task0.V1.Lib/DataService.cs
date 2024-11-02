@@ -2,7 +2,7 @@
 
 namespace Tyuiu.ShanginAA.Sprint1.Task0.V1.Lib
 {
-    public class DataService : ISprint1Task0V0
+    public class DataService : ISprint1Task0V1
     {
         public double Calculate()
         {
