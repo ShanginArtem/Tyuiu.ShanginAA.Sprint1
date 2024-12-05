@@ -1,6 +1,6 @@
-﻿using Tyuiu.ShanginAA.Sprint1.Task6.V4.Lib;
+﻿using Tyuiu.ShanginAA.Sprint1.Task7.V19.Lib;
 
-namespace Tyuiu.ShanginAA.Sprint1.Task6.V4
+namespace Tyuiu.ShanginAA.Sprint1.Task7.V19
 {
     class Program
     {
@@ -13,29 +13,31 @@ namespace Tyuiu.ShanginAA.Sprint1.Task6.V4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Работа со строками класс String                                   *");
-            Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #4                                                              *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #19                                                              *");
             Console.WriteLine("* Выполнил: Шангин Артём Александрович | ИСПб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу: пользователь вводит текст. Напечатать               *");
-            Console.WriteLine("* все слова, содержащие удвоенное н (нн).                                 *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("*          7x^2                                                           *");
+            Console.WriteLine("* z = x -   -----  + sin(x) + |x^4 - x^5|                                 *");
+            Console.WriteLine("*          x^3                                                            *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string a;
+            double x;
 
-            Console.WriteLine("Введите текст: ");
-            a = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Введите значение X: ");
+            x = Convert.ToDouble(Console.ReadLine());
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            var result = ds.CheckDoubleN(a);
-            Console.WriteLine("Все слова, содержащие удвоенное н (нн): " + result);
+            var result = ds.Calculate(x);
+            Console.WriteLine("Значение z = " + result);
 
             Console.ReadKey();
 
